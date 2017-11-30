@@ -1,0 +1,154 @@
+
+.navbar { 
+	background-color: #382f22; 
+	float: right;
+	padding: 0;
+	position: sticky;
+	right: 5%;
+}
+
+.navbar li a { 
+	font-size: 1.5em;
+	height: 3em;
+	min-width: 5em;
+	padding-top: .7em;
+	text-align: center;
+
+}
+
+.navbar li a:hover, 
+.navbar li a:focus,
+.navbar li a:active { 
+	background: #4490c0;
+
+}
+
+.navbar li a .menutext {
+	display: none;
+}
+.navbar li a:hover .menutext {
+	color: #382f22;
+	display: block;
+}
+
+.navbar li a:hover i {
+	display: none;
+}
+
+body {
+	width: 90%;
+	margin: auto;
+}
+
+header, main {
+	margin: 2em 12em 5em 2em;
+	max-width: 1200px;
+}
+
+header {
+	background-image: url(images/header.png);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	color: #382f22;
+	height: 300px;
+	margin-bottom: 1em;
+}
+
+header:hover {
+	background-position: center -300px;
+}
+
+header h1 {
+	float: left;
+	padding-top: 4em;
+	width: 40%;
+}
+
+header .lead {
+	float: right;
+	margin: 0;
+	padding-top: 13em;
+	text-align: right;
+	width: 40%;
+}
+
+a {
+	color: #382f22;
+}
+
+a:hover {
+	color: #4490c0;
+}
+
+h2, h3 {
+	color: #382f22;
+}
+
+footer {
+	font-size: .7em;
+	text-align: center;
+}
+
+#experience abbr {
+	text-decoration-line: none;
+}
+
+@media only screen and (max-width: 1200px) {
+	header {
+		background-image: url(images/smheader.png);
+		height: 150px;
+	}
+
+	header:hover {
+		background-position: center -150px;
+	}
+
+	header h1 {
+		padding-top: 1.4em;
+	}
+
+	header h1.display-4 {
+		font-size: 250%;
+	}
+
+	header .lead {
+		padding-top: 3.5em;
+		width: 35%
+	}
+
+	.location {
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+	.navbar {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+	}
+
+	.navbar li a .menutext {
+		display: inline-block;
+		width: 20%;
+		text-align: left;
+		padding-left: 1em;
+	}
+
+	.navbar li a:hover .menutext {
+		color: #382f22;
+		display: inline-block;
+	}
+
+	.navbar li a:hover i {
+		display: inline-block;
+	}
+
+	header, main {
+		margin: 3em auto;
+		width: 90%;
+	}
+
+}
