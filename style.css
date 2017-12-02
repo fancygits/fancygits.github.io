@@ -3,8 +3,9 @@
 	background-color: #382f22; 
 	float: right;
 	padding: 0;
-	position: sticky;
+	position: fixed;
 	right: 5%;
+	height: 100%; 
 }
 
 .navbar li a { 
@@ -90,7 +91,11 @@ footer {
 	text-align: center;
 }
 
-
+iframe {
+	border: 0;
+	margin: 5em auto;
+	transform: scale(2);
+}
 
 .carousel {
 	max-width: 800px;
@@ -106,15 +111,6 @@ footer {
 .carousel-indicators .active {
 	background-color: #382f22;
 }
-
-.centered {
-	position: fixed;
-	top: 10%;
-	left: 50%;
-	transform: translate(-50%, 0);
-}
-
-
 
 #experience abbr {
 	text-decoration-line: none;
@@ -231,6 +227,7 @@ figure img {
 		top: 0;
 		right: 0;
 		width: 100%;
+		height: auto;
 	}
 
 	.navbar li a .menutext {
@@ -261,6 +258,10 @@ figure img {
 }
 
 @media only screen and (max-width: 550px) {
+	iframe {
+		transform: scale(1.5);
+	}
+	
 	#portfolio {
 		height: 750px;
 	}
@@ -273,6 +274,10 @@ figure img {
 @media only screen and (max-width: 450px) {
 	header h1, .lead {
 		display: none;
+	}
+	
+	iframe {
+		transform: scale(1);
 	}
 	
 	.float-right {

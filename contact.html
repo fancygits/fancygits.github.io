@@ -11,7 +11,7 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-		<script src="scripts/validate.js" type="text/javascript"></script>
+		<script src="scripts/validate.js"></script>
 		<link href="style.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -53,37 +53,37 @@
 
 		<main>
 			<h2 class="display-4">Contact me</h2>
-				<p>For questions, comments, or contract work.</p>
-				<form id="needs-validation" action="http://www.formbuddy.com/cgi-bin/form.pl" method="post" novalidate>
-					<input type="hidden" name="username" value="forms4me">
-					<input type="hidden" name="reqd" value="1,2,3">
-					<input type="hidden" name="url" value="http://stu.westga.edu/~jjohn144/luke/submit.html">
-					<div class="form-group">
-						<label for="name">Name</label>
-						<input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
-						<div class="invalid-feedback">What's your name?</div>
-					</div>
-					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="email" class="form-control" name="email" id="email" class="required email" placeholder="name@example.com" required>
-						<div class="invalid-feedback">What's your email address?</div>
-					</div>
-					<div class="form-group">
-						<label for="comments">Comments:</label>
-						<textarea class="form-control" name="comments" id="comments" required></textarea>
-						<div class="invalid-feedback">Why are you contacting me?</div>
-					</div>
-					<div class="form-check">
-						<label class="form-check-label">
-							<input type="checkbox" class="form-check-input">
-							Join my mailing list
-						</label>
-					</div>
-					<input type="submit" class="btn btn-primary" id="mySubmit" value="Send">
-					<input type="reset" class="btn" value="Reset">
-				</form>
-			
-			
+			<p>For questions, comments, or contract work.</p>
+			<form id="needs-validation" action="http://www.formbuddy.com/cgi-bin/form.pl" method="post" novalidate>
+				<input type="hidden" name="username" value="forms4me">
+				<input type="hidden" name="reqd" value="1,2,3">
+				<input type="hidden" name="url" value="http://stu.westga.edu/~jjohn144/luke/submit.html">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
+					<div class="invalid-feedback">What's your name?</div>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" class="form-control required email" name="email" id="email" placeholder="name@example.com" required>
+					<div class="invalid-feedback">What's your email address?</div>
+				</div>
+				<div class="form-group">
+					<label for="comments">Comments:</label>
+					<textarea class="form-control" name="comments" id="comments" required></textarea>
+					<div class="invalid-feedback">Why are you contacting me?</div>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="checkbox" class="form-check-input">
+						Join my mailing list
+					</label>
+				</div>
+				<input type="submit" class="btn btn-primary" id="mySubmit" value="Send">
+				<input type="reset" class="btn" value="Reset">
+			</form>
+
+
 		</main>
 
 		<footer>
