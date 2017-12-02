@@ -10,9 +10,9 @@
 
 .navbar li a { 
 	font-size: 1.5em;
-	height: 3em;
+	height: 5em;
 	min-width: 5em;
-	padding-top: .7em;
+	padding-top: 1.5em;
 	text-align: center;
 
 }
@@ -177,6 +177,13 @@ figure img {
 }
 
 /* SCREEN SIZE ADJUSTMENTS */
+@media only screen and (max-height: 450px) {
+	.navbar li a{
+		height: 3em;
+		padding-top: .5em;
+	}
+}
+
 @media only screen and (max-width: 1200px) {
 	header {
 		background-image: url(images/smheader.png);

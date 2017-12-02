@@ -3,10 +3,8 @@ $(document).ready(function() {
 	$('#portfolio a').click(function() {
 		var portfolioHref = $(this).attr('href');
 		var portfolioAlt = $(this).attr('title');
-		//$('figure').css('display', 'none');
 		$('figure img').attr({ src: portfolioHref, alt: portfolioAlt }); 
 		$('figcaption').html(portfolioAlt);
-		//$('figure').fadeToggle(1000);
 		return false;
 	});
 });

@@ -1,0 +1,21 @@
+James Luke Johnson
+CS6251 Final Submission
+Hosted at: http://stu.westga.edu/~jjohn144/luke/index.html
+
+Requirements 	- 	Location
+Meta tags 		-	Every page head
+Banner logo 	-	Every page heading
+Main navigation	-	Every page nav
+External style 	-	style.css
+
+Extra feature	-	CSS Image Gallery - portfolio.html
+
+Validated Form	-	Validated by Bootstrap.js - contact.html
+Form Submission	-	Through www.formbuddy.com
+
+Responsive size	-	Every page
+
+Bootstrap CSS 	-	Every page uses Bootstrap classes.
+BS components	-	Image slideshow - photos.html
+				-	Accordion collapse - index.html
+BS JavaScript	-	Image Gallery - portfolio.html
