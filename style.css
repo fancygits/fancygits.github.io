@@ -38,11 +38,12 @@
 body {
 	width: 90%;
 	margin: auto;
+	max-width: 1200px;
 }
 
 header, main {
 	margin: 2em 12em 5em 2em;
-	max-width: 1200px;
+	
 }
 
 header {
@@ -89,10 +90,97 @@ footer {
 	text-align: center;
 }
 
+
+
+.carousel {
+	max-width: 800px;
+	text-align: center;
+}
+
+.carousel-caption {
+	background-color: rgba(68, 144, 192, 0.6);
+	border-radius: 2em;
+	text-shadow: .2em .2em .5em #173040;
+}
+
+.carousel-indicators .active {
+	background-color: #382f22;
+}
+
+.centered {
+	position: fixed;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+
+
 #experience abbr {
 	text-decoration-line: none;
 }
 
+/* PORTFOLIO GALLERY */
+#portfolio {
+	background-color: rgba(34, 56, 47, 0.7);
+	border-radius: 1em;
+	height: 930px;
+	padding-top: 1em;
+}
+
+#portfolio img {
+	vertical-align: top;
+}
+
+#portfolio ul {
+	list-style-type: none;
+	text-align: center;	
+}
+
+#portfolio li {
+	max-width: 18%;
+}
+
+.img-wrap {
+	position: relative;
+	width: 150px;
+	height: 100px;
+	vertical-align: top;
+}
+
+.img-hover {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	max-width: 160px;
+	border-radius: 5px;
+	background-color: rgba(68, 144, 192, 0.7);
+	color: #fff;
+	text-align: center;
+	font-size: 200%;
+	font-weight: bold;
+	opacity: 0;	
+	transition: .5s;
+}
+
+.img-wrap:hover .img-hover {
+	opacity: 1;
+}
+
+figure {
+	margin: auto;
+	padding-top: 1em;
+	text-align: center;
+	width: 95%;
+}
+
+figure img {
+	max-width: 100%;
+}
+
+/* SCREEN SIZE ADJUSTMENTS */
 @media only screen and (max-width: 1200px) {
 	header {
 		background-image: url(images/smheader.png);
@@ -116,11 +204,26 @@ footer {
 		width: 35%
 	}
 
+	.img-hover {
+		font-size: 150%;
+	}
+	
 	.location {
 		display: none;
 	}
 }
 
+@media only screen and (max-width: 1024px) {
+	.img-hover {
+		font-size: 125%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.img-hover {
+		font-size: 110%;
+	}
+}
 
 @media only screen and (max-width: 768px) {
 	.navbar {
@@ -150,5 +253,47 @@ footer {
 		margin: 3em auto;
 		width: 90%;
 	}
+	
+	.carousel-caption {
+		display: none;
+	}
 
+}
+
+@media only screen and (max-width: 550px) {
+	#portfolio {
+		height: 750px;
+	}
+	
+	.img-hover {
+		font-size: 90%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	header h1, .lead {
+		display: none;
+	}
+	
+	.float-right {
+		display: none;
+	}
+	
+	#portfolio {
+		height: 650px;
+	}
+	
+	.img-hover {
+		font-size: 80%;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	#portfolio {
+		height: 550px;
+	}
+	
+	.img-hover {
+		font-size: 70%;
+	}
 }
