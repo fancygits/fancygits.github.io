@@ -19,3 +19,7 @@ Bootstrap CSS 	-	Every page uses Bootstrap classes.
 BS components	-	Image slideshow - photos.html
 				-	Accordion collapse - index.html
 BS JavaScript	-	Image Gallery - portfolio.html
+
+
+NOTE: 	I tried using Bootstrap 4 icons and couldn't figure it 
+		out so I used font-awesome.css for nav icons.
